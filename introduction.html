@@ -110,45 +110,19 @@
             text-align: center;
             height: 50px;
         }
-        .table{
+        .body-content table{
             display: flex;
-            flex-direction: row;
-            height: fit-content;
-            width: fit-content;
+            color: rgb(237,208,154);
             border: 1px solid rgb(237,208,154);
         }
-        .column{
-            display: flex;
-            flex-direction: column;
+        .body-content table tr{
             border: 1px solid rgb(237,208,154);
-            width: 300px;
         }
-        .column-header{
-            border-bottom: 1px solid rgb(237,208,154);
-            padding: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .body-content table th{
+            border: 1px solid rgb(237,208,154);
         }
-        .column-content{
-            height: fit-content;
-            overflow-y: scroll;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            padding: 15px;
-            gap: 10px;
-        }
-        .content-item{
-            font-size: 20px;
-            color:  rgb(237,208,154);
-            padding-left: 5px;
-        }
-        .column-header span{
-            font-size: 40px;
-            text-align: center;
-            position: relative;
-            color:rgb(237,208,154);
+        .body-content table td{
+            border: 1px solid rgb(237,208,154);
         }
         .overlay{
             position: fixed;
@@ -191,38 +165,21 @@
         <div class="body">
             <div class="body-title"><span>Information Table</span></div>
             <div class="body-content">
-                <div class="table">
-                    <div class="column">
-                        <div class="column-header"><span>Skills</span></div>
-                        <div class="column-content">
-                            <div class="content-item"><li>HTML, CSS, JavaScript, Python, Java, C++</li></div>
-                            <div class="content-item"><li>Writing, Worldbuilding, Character Design</li></div>
-                            <div class="content-item"><li>Traditional Art (Graphite, Charcoal), Digital Art (Procreate), Design</li></div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="column-header"><span>Abilities</span></div>
-                        <div class="column-content">
-                            <div class="content-item">
-                                <div class="content-item"><li>Proficient in: Web Design, Frontend and Backend</li></div>
-                                <div class="content-item"><li>Moderate in: C++, Data Base Design </li></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="column-header"><span>Education</span></div>
-                        <div class="column-content">
-                            <div class="content-item"><li>Associates in Arts - Fayetteville Technical Community College (FTCC) [Completed]</li></div>
-                            <div class="content-item"><li>Bachelors in Computer Science - NCAT [In Progress]</li></div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="column-header"><span>Training</span></div>
-                        <div class="column-content">
-                            <div class="content-item"><li>None</li></div>
-                        </div>
-                    </div>
-                </div>
+                <table>
+                    <tr>
+                        <th>Skills</th>
+                        <th>Abilities</th>
+                        <th>Education</th>
+                        <th>Training</th>
+                    </tr>
+                    <tr>
+                        <td>HTML, CSS, JavaScript, Python, Java, C++<br><br>Writing, Worldbuilding, Character Design<br><br>Traditional Art (Graphite, Charcoal), Digital Art (Procreate), Design</td>
+                        <td>Proficient in: Web Design, Frontend and Backend<br><br>Moderate in: C++, Data Base Design</td>
+                        <td>Associates in Arts - Fayetteville Technical Community College (FTCC) [Completed]<br><br>Bachelors in Computer Science - NCAT [In Progress]</td>
+                        <td>None</td>
+                    </tr>
+                    </table>
+
             </div>
         </div>
         <!--==================================================================================================
@@ -240,43 +197,43 @@
                     <div class="image-item-desc">"Dracula's Castle — Castlevania"</div>
                 </div>
                 <div class="image-item">
-                    <img src="/img/Beach.jpeg">
+                    <img src="img/Beach.jpeg">
                     <div class="image-item-desc">"Beach — Alice in Borderland"</div>
                 </div>
                 <div class="image-item">
-                    <img src="/img/The great eared nightjar.jpeg">
+                    <img src="img/The great eared nightjar.jpeg">
                     <div class="image-item-desc">"The Great Eared Nightjar"</div>
                 </div>
                 <div class="image-item">
-                    <img src="/img/hare.jpeg">
+                    <img src="img/hare.jpeg">
                     <div class="image-item-desc">"Hare"</div>
                 </div>
                 <div class="image-item">
-                    <img src="/img/fox.jpeg">
+                    <img src="img/fox.jpeg">
                     <div class="image-item-desc">"Fox"</div>
                 </div>
                 <div class="image-item">
-                    <img src="/img/owl.jpeg">
+                    <img src="img/owl.jpeg">
                     <div class="image-item-desc">"Barn Owl"</div>
                 </div>
                 <div class="image-item">
-                    <img src="/img/Ophelia.jpg">
+                    <img src="img/Ophelia.jpg">
                     <div class="image-item-desc">"Ophelia — Thomas Francis Dicksee"</div>
                 </div>
                 <div class="image-item">
-                    <img src="/img/Pallas_Athena.jpg">
+                    <img src="img/Pallas_Athena.jpg">
                     <div class="image-item-desc">"Pallas Athena — Rembrandt"</div>
                 </div>
                 <div class="image-item">
-                    <img src="/img/Maze_Runner_Movie_Poster.jpeg">
+                    <img src="img/Maze_Runner_Movie_Poster.jpeg">
                     <div class="image-item-desc">"The Maze Runner"</div>
                 </div>
                 <div class="image-item">
-                    <img src="/img/The_Breakfast_Club_Movie_Poster.jpeg">
+                    <img src="img/The_Breakfast_Club_Movie_Poster.jpeg">
                     <div class="image-item-desc">"The Breakfast Club"</div>
                 </div>
                 <div class="image-item">
-                    <img src="/img/HadesTown_Poster.jpeg"> 
+                    <img src="img/HadesTown_Poster.jpeg"> 
                     <div class="image-item-desc">"Hadestown"</div>
                 </div>
             </div>
